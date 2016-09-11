@@ -2,9 +2,29 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>vitalyguzun</title>
+        <!-- 2. JS libs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.24/system.js"></script>
+        <script src="https://npmcdn.com/rxjs@5.0.0-beta.2/bundles/Rx.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/angular2-polyfills.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/angular2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/http.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/router.js"></script>
+        <script src="https://npmcdn.com/angular2@2.0.0-beta.14/es6/dev/src/testing/shims_for_IE.js"></script>
+
+        <!-- 3. System.config -->
+        <script>
+        	System.config({
+        		defaultJSExtensions: true,
+        		map: {
+        			"angular2": "node_modules/angular2",
+        			"rxjs": "node_modules/rxjs"
+        		}
+        	});
+        	System.import('dist/app/boot').then(null, console.error.bind(console));
+        </script>
     </head>
     <body>
-        
+        <app>Load...</app>
     </body>
 </html>

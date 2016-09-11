@@ -2,7 +2,7 @@
   "name": "vitalyguzun",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +18,16 @@
   "homepage": "https://github.com/isoniko/vitalyguzun#readme",
   "dependencies": {
     "angular2": "^2.0.0-beta.17",
+    "browser-sync": "^2.15.0",
     "es6-shim": "^0.35.1",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-typescript": "^2.13.6",
     "reflect-metadata": "^0.1.2",
     "rxjs": "^5.0.0-beta.6",
+    "superstatic": "^4.0.3",
+    "systemjs": "^0.19.38",
     "zone.js": "^0.6.21"
   }
 }
